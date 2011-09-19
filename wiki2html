@@ -1,5 +1,14 @@
 #!/usr/bin/env node
 
+/**
+ * Whole script is based on http://remysharp.com/downloads/wiki2html.js script.
+ * I changed just few fixes to let it work under node enviroment and added some argument parsing.
+ * 
+ * Usage:
+ * wiki2html <input file> – prints generated HTML based on input file in MediaWiki format to console.
+ * wiki2html <input file> <output file> – saves generated HTML to output file.
+ */ 
+
 (function (global) {
     
     var extendString = true;
